@@ -5,7 +5,8 @@ import RandomReducer from './RandomSlice'
 import NameReducer from './NameSlice'
 import productReducer from './ProductSlice'
 import cartReducer from '../redux/CartSlice'
-
+import CounteSlice from "./CounteSlice";
+import counterSlice from "./counterSlice";
 const store = configureStore({
   reducer: {
     counterRTK: counterReducer,
@@ -13,7 +14,8 @@ const store = configureStore({
     randomMath:RandomReducer,
     nameSetting:NameReducer,
     productStore:productReducer,
-    cartStore:cartReducer
+    cartStore:cartReducer,
+    countStore:counterSlice
 
   }
 });
